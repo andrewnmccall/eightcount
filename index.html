@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Video Capture Example</title>
+	<link href="js_example_style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h2>Video Capture Example</h2>
+	<p>
+		Click <b>Start/Stop</b> button to start or stop the camera capture.<br>
+		The <b>videoInput</b> is a &lt;video&gt; element used as OpenCV.js input.
+		The <b>canvasOutput</b> is a &lt;canvas&gt; element used as OpenCv.js output.<br>
+		The code of &lt;textarea&gt; will be executed when video is started.
+		You can modify the code to investigate more.
+	</p>
+	<div>
+		<div class="control"><button id="startAndStop">Start</button></div>
+	</div>
+	<p class="err" id="errorMessage"></p>
+	<div>
+		<table cellpadding="0" cellspacing="0" width="0" border="0">
+			<tr>
+				<td>
+					<video id="videoInput" width="320" height="240"></video>
+				</td>
+				<td>
+					<canvas id="canvasOutput" width="320" height="240"></canvas>
+				</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					<div class="caption">videoInput</div>
+				</td>
+				<td>
+					<div class="caption">canvasOutput</div>
+				</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript" src="opencv.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
